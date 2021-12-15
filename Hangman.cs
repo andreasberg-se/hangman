@@ -53,7 +53,7 @@ namespace Hangman
         // Add correct letter.
         static void AddCorrectLetter(char correctLetter, ref char[] letters)
         {
-            for (int i = 0; i < 30; i++)
+            for (int i = 0; i < letters.Length; i++)
             {
                 if (letters[i] == ' ')
                 {
